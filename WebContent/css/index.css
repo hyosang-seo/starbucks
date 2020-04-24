@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+
+header{
+	background : rgb(246,245,239);
+	border-top: 1px solid black;
+		
+	}
+	
+
+header .container{
+	position : relative;
+	
+}
+header .container:after{
+	position : relative;
+	content : "";
+	display : block;
+	clear : both;
+	
+}
+header a img{
+	float: left;
+	width : 92px;
+	height: 92px;
+	margin : 29px 0 29px 0;
+}
+
+
+header .mainmenu ul{
+	float : right;
+}
+
+
+header .mainmenu ul li{
+	float : left;
+	margin : 87px 0 0 0;
+	font-size: 13px;
+}
+header .mainmenu ul li a{
+	padding : 20px 26px 46px 26px;
+}
+
+header .mainmenu ul a:hover{
+	background: #2c2a29;
+	text-decoration: underline;
+	color : #669900;
+}
+
+header .submenu ul{
+	position: absolute;
+	display : flex;
+	right : 0px;
+	top : 0px;
+}
+
+header .submenu ul li{
+	margin : 24px 0 37px 20px;
+	font-size: 15px;
+	padding-right : 20px;
+	border-right: 1px solid #e7e7e6;
+	color : #d8d8d3;
+	
+}
+
+
+header .submenu ul li a .search_icon{
+	margin : 11px 0 0 0;
+	padding : 8px;
+	border : 1px solid gray;
+	border-radius : 6px;
+	width : 20px;
+	height : 21px;
+	
+}
+
+header .submenu ul .margin_reset{
+	margin : 0 0 0 0;
+	border-right: none;
+}
+header .submenu ul li a:hover{
+	text-decoration: underline;
+}
+
+
+
+header .submenu ul li a, header .mainmenu ul li a{
+ 	color : black;
+	}
+	
+
+
