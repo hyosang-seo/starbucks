@@ -1,19 +1,26 @@
 @charset "UTF-8";
 
 
+
+
 header{
 	background : rgb(246,245,239);
-	border-top: 1px solid black;
+	border-top : 1px solid black;
 		
 	}
+
+.mainmenu, .submenu{
+	border : 1px solid red;
+}
 	
 
 header .container{
+	width    : 1400px;
+ 	margin   : 0 auto;
 	position : relative;
 	
 }
 header .container:after{
-	position : relative;
 	content : "";
 	display : block;
 	clear : both;
@@ -23,22 +30,20 @@ header a img{
 	float: left;
 	width : 92px;
 	height: 92px;
-	margin : 29px 0 29px 0;
+	margin : 27px 0 29px 39px;
 }
 
 
-header .mainmenu ul{
+header .mainmenu{
 	float : right;
-}
-
-
-header .mainmenu ul li{
-	float : left;
 	margin : 87px 0 0 0;
-	font-size: 13px;
 }
+header .mainmenu ul li{
+	float : left;}
+	
 header .mainmenu ul li a{
 	padding : 20px 26px 46px 26px;
+	display: block;
 }
 
 header .mainmenu ul a:hover{
@@ -47,13 +52,16 @@ header .mainmenu ul a:hover{
 	color : #669900;
 }
 
-header .submenu ul{
+header .submenu{
 	position: absolute;
-	display : flex;
-	right : 0px;
+	right : 54px;
 	top : 0px;
 }
 
+header .submenu ul{
+	display: flex;
+	
+}
 header .submenu ul li{
 	margin : 24px 0 37px 20px;
 	font-size: 15px;
