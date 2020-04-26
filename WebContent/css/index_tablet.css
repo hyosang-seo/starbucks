@@ -1,0 +1,11 @@
+header a img {
+  margin: 25px 0 29px 39px;
+}
+
+header .container {
+  width: 100%;
+}
+
+header .container .mainmenu_temp {
+  display: none;
+}
