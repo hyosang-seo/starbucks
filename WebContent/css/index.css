@@ -21,36 +21,32 @@ header .container:after {
   clear: both;
 }
 
-header a img {
+header .container a img {
   float: left;
   width: 92px;
   height: 92px;
   margin: 30px 0 29px 39px;
 }
 
-header .mainmenu {
+header .container .mainmenu {
   float: right;
   margin: 66px 0 0 0;
 }
 
-header .mainmenu_temp {
-  display: none;
-}
-
-header .mainmenu ul {
+header .container .mainmenu ul {
   padding-left: 0;
 }
 
-header .mainmenu ul li {
+header .container .mainmenu ul li {
   float: left;
 }
 
-header .mainmenu ul li a {
+header .container .mainmenu ul li a {
   padding: 20px 23px 52px 23px;
   display: block;
 }
 
-header .mainmenu ul li a:first-child(1) {
+header .container .mainmenu ul li a:first-child(1) {
   padding: 20px 0px 52px 23px;
 }
 header .mainmenu ul li a:hover {
@@ -59,17 +55,17 @@ header .mainmenu ul li a:hover {
   color: #669900;
 }
 
-header .submenu {
+header .container .submenu {
   position: absolute;
   right: 54px;
   top: 0px;
 }
 
-header .submenu ul {
+header .container .submenu ul {
   display: flex;
 }
 
-header .submenu ul li {
+header .container .submenu ul li {
   margin: 24px 0 0 20px;
   font-size: 12px;
   padding-right: 20px;
@@ -77,34 +73,21 @@ header .submenu ul li {
   color: #d8d8d3;
 }
 
-header .submenu ul li:last-child a {
-  font-size: 0;
-  color: transparent;
-}
-
-header .submenu ul li:last-child {
+header .container .submenu ul li:nth-child(5) {
   border: none;
+  margin: 0 0 0 20px;
 }
 
-header .submenu ul li:last-child ::before {
+header .container .submenu ul li:nth-child(5) a {
   padding: 8px 8px 8px 8px;
   background-color: #ffffff;
-  content: "\e97a";
-  font-family: "xeicon";
   font-size: 26px;
   color: black;
   border: 1px solid #cccccc;
   border-radius: 5px;
-}
-header .submenu ul .margin_reset {
-  margin: 0 0 0 0;
-  border-right: none;
-}
-header .submenu ul li a:hover {
-  text-decoration: underline;
+  margin-top: 11px;
 }
 
-header .submenu ul li a,
-header .mainmenu ul li a {
-  color: black;
+header .container .submenu ul li a:hover {
+  text-decoration: underline;
 }

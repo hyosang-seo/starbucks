@@ -2,17 +2,45 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="telephone=no" /> -->
     <title>Starbucks 따라하기</title>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/index_tablet.css" media="all and (max-width : 1120px)" />
-    <link rel="stylesheet" href="css/index_mobile.css" media="all and (max-width : 970px)" />
-  </head>
-  <body>
+    
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+
+    <link rel="stylesheet" media = "all and (max-width : 1120px)" href="css/index_tablet.css"/>            
+    <link rel="stylesheet" media = "all and (max-width : 960px)" href="css/index_mobile.css"/>         
+    <style>
+      header .container .submenu ul li:last-child{
+    display: none ;
+  }
+  
+.sorry {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  margin: 200px auto;
+  border: 1px solid black;
+}
+
+
+  
+}
+
+  
+    </style>
+
+    <body>
+
     <header>
       <div class="container">
         <a><img src="img/logo.png" alt="logo" /></a>
@@ -28,32 +56,41 @@
           </ul>
         </nav>
 
-        <nav class="mainmenu_temp">
-          <ul>
-            <li><a href="#">COFFEE</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">STORE</a></li>
-            <li><a href="#">RESPONSIBILITY</a></li>
-            <li><a href="#">MY STARBUCKS REWARDS</a></li>
-            <li><a href="#">WHAT'S NEW</a></li>
-          </ul>
-        </nav>
-
-        <nav class="submenu">
+        <div class="submenu">
           <ul>
             <li><a href="#">Sign In</a></li>
             <li><a href="#">My Starbucks</a></li>
             <li><a href="#">Customer Service &amp; Ideas</a></li>
             <li><a href="#">Find a Store</a></li>
-            <li><a href="#">검색</a></li>
+            <li><a href="#" class="xi-search"></a></li>
+            <li><a href="#">전체메뉴보기</a></li>
           </ul>
         </nav>
       </div>
-
-      <i class="xi-user"></i>
-      <i class="xi-bars"></i>
-      <i class="xi-maker"></i>
-      <i class="xi-angle-down"></i>
     </header>
+
+
+      <div class="sorry">
+        저작권 및 그림파일을 구할 수 없어 헤더만 적용시켰습니다. <br>
+        스타벅스 메인 페이지를 캡쳐하여 연습하였습니다.<br>
+        vsc를 이용하여 만들었고 모바일로 확인하시면 반응형이 적용된 것을 볼 수 있습니다..<br>
+        IE에서는 정상 작동합니다.<br>
+        그럼 이만
+      </div>
+      
+
   </body>
+<style>
+  @media (max-width : 960px){
+  header .container .submenu ul li:last-child{
+    display: block ;
+  }
+
+  header .container a img{
+   width : 55px;
+   height: 55px;
+   margin:20px;
+  }
+  }
+</style>
 </html>
