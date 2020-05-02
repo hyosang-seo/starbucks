@@ -32,13 +32,12 @@
   border: 1px solid black;
 }
 
-
-  
 }
+  
 
   
     </style>
-
+</head>
     <body>
 
     <header>
@@ -70,17 +69,88 @@
     </header>
 
 
-      <div class="sorry">
-        저작권 및 그림파일을 구할 수 없어 헤더만 적용시켰습니다. <br>
-        스타벅스 메인 페이지를 캡쳐하여 연습하였습니다.<br>
-        vsc를 이용하여 만들었고 모바일로 확인하시면 반응형이 적용된 것을 볼 수 있습니다..<br>
-        IE에서는 정상 작동합니다.<br>
-        그럼 이만
-      </div>
+     <main>
+       <section class = new_drink>
+       <div class = "container">
+         <div class = "left">
+            <img id = "slogon" src ="img/20_summer_emblem.png" alt = "chill and playful">
+          <a href=#>자세히보기</a>
+          </div>
+          <div class = "right_img">
+            <div id ='peach'>
+            <img src ="img/peach.png" alt ="peach_drink">
+          </div>
+             <div id ='coconut'>
+            <img src ="img/coconut.png" alt ="coconut">
+          </div>
+            <div id ='waffle'>
+            <img src ="img/waffle.png" alt ="waffle">
+          </div> 
+        </div>
+       </div>
+      </section>
+
+      <section class="notice">
+        <div class ="notice_left">
+          <img src = "img/notice_ttl.png">
+          <h3><a href ="#">공지사항 내용</a></h3>
+          <div class="btn">
+          <a class = "xi-plus-circle-o" href ="#" alt ='자세히보기'></a>
+          </div >
+        </div>
+        
+
+        <div class ="notice_right">
+          <a href ="#"><h2>스타벅스 프로모션</h2><img src ="img/btn_prom_down.png" alt="프로모션 자세히 보기"></a>
+        </div>
+      </section>
+
+
+     <section class="bean">
+       <div class="container">
+         <div class ="bean_pic">
+          <img src = "img/20_summer_bean.png" alt ="원두">
+        </div>
+          <div class = "bean_comment">
+            <h3>여름의 시작을 알리는청량함</h3>
+            <h2>카티 카티 블렌드</h2>
+               <h4>
+                케냐 원두의 시트러스한 산미와 입 안 가득 향긋한
+                에티오피아 원두의 꽃 향기를 경험해 보세요.
+               </h4>
+               <a href = "#">자세히 보기</a>
+          </div>
+       </div>
+     </section>
+       
+
+       <section class ="new_arriver">
+         <div class ="container">
+          <div class = "reward_logo">
+            <img src = "img/reserve_medal01-removebg-preview.png" alt ="reward/star">
+          </div>
+          <span>
+								NEW ARRIVAL
+								햇볕과 물의 연금술로 빚은 황홀한 풍미 레인샤인 블렌드™ 블렌드 에티오피아 카욘 마운틴 팜
+            </span>
+            <div class="reward_coffe">
+              <img src = "img/20_summer_reserve_bean.png">
+            </div>
+          </div>
+       </section>
+
+
+
+
+
+
+    </main>
       
 
   </body>
 <style>
+
+  
   @media (max-width : 960px){
   header .container .submenu ul li:last-child{
     display: block ;
