@@ -7,3 +7,20 @@ header a img {
 header .container {
   width: 100%;
 }
+
+main .new_drink .container .left #slogon {
+  width: 300px;
+}
+
+main .new_drink .container .right_img #waffle {
+  top: 300px;
+  left: 100px;
+}
+main .new_drink .container .right_img #peach {
+  top: 50px;
+  left: 380px;
+}
+main .new_drink .container .right_img #coconut {
+  top: 280px;
+  left: 580px;
+}
