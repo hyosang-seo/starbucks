@@ -13,14 +13,71 @@ main .new_drink .container .left #slogon {
 }
 
 main .new_drink .container .right_img #waffle {
-  top: 300px;
-  left: 100px;
+  top: 130px;
+  left: 140px;
+}
+main .new_drink .container .right_img #waffle img {
+  height: 300px;
 }
 main .new_drink .container .right_img #peach {
   top: 50px;
-  left: 380px;
+  left: 570px;
+}
+main .new_drink .container .right_img #peach img {
+  height: 280px;
 }
 main .new_drink .container .right_img #coconut {
-  top: 280px;
-  left: 580px;
+  top: 200px;
+  right: -50px;
+}
+main .bean .container .bean_pic img {
+  margin: 40px 0 32px 230px;
+}
+main .new_arriver {
+  overflow: hidden;
+}
+
+main .new_arriver .container .reward_coffee {
+  margin: 40px 0 0 -130px;
+  position: relative;
+}
+main .new_arriver .container .reward_coffee img {
+  width: 600px;
+}
+
+footer .container .footer_menu {
+  margin: 0;
+  width: 100%;
+}
+
+footer .container .decoration {
+  position: absolute;
+  right: 10px;
+}
+footer .container .decoration img {
+  height: 200px;
+}
+footer .container .footer_menu {
+  width: 70%;
+}
+
+footer .container .footer_menu ul {
+  display: inline-block;
+  position: flex;
+  margin-right: 80px;
+  width: 100px;
+  display: block;
+}
+footer .container .footer_menu ul li a {
+  margin-right: 100px;
+  width: 100px;
+  display: block;
+}
+
+footer .company_info,
+footer .low,
+footer .total_btn,
+footer .footer_prize,
+footer .mark {
+  display: none;
 }

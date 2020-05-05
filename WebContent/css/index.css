@@ -68,6 +68,10 @@ header .container .submenu ul li a {
 
 
 메인메뉴 */
+
+header .container {
+  overflow-x: hidden;
+}
 header .container .mainmenu {
   float: right;
   margin: 30px 0 0 0;
@@ -93,6 +97,13 @@ header .mainmenu ul li a:hover {
   color: #669900;
 }
 
+/* 
+
+
+
+
+신메뉴 */
+
 main > .new_drink {
   background-color: #f4e7c7;
   position: relative;
@@ -111,11 +122,12 @@ main .new_drink .container .left #slogon {
 }
 main .new_drink .container .left a {
   position: absolute;
-  top: 330px;
+  top: 280px;
   left: 0px;
-  border: 3px solid #3a62ad;
-  padding: 10px 36px 10px 36px;
-  font-size: 18px;
+  border: 2px solid #3a62ad;
+  border-radius: 3px;
+  padding: 6px 20px 6px 20px;
+  font-size: 16px;
   color: #3a62ad;
 }
 
@@ -152,7 +164,6 @@ main .notice .notice_left {
   height: 60px;
   color: white;
   position: relative;
-  border: 1px solid blue;
 }
 
 main .notice .notice_left img {
@@ -211,6 +222,9 @@ main .bean .container:after {
   content: "";
   display: block;
   clear: both;
+  position: relative;
+}
+main .bean .container {
 }
 main .bean .container .bean_pic {
   display: inline-block;
@@ -219,21 +233,24 @@ main .bean .container .bean_pic img {
   margin: 40px 0 32px 160px;
 }
 
-main .bean .bean_comment {
-  float: right;
-  margin: 110px 30px 95px 0;
+main .bean .container .bean_comment {
+  display: inline-block;
+  position: absolute;
+  top: 130px;
+  right: 80px;
+  /* margin: 30px 95px 100px; */
 }
 main .bean .bean_comment h1 {
   color: #309ce7;
   font-size: 20px;
-  letter-spacing: -2spx;
-  margin-bottom: 10px;
+  letter-spacing: -2px;
+  margin-bottom: 5px;
 }
 main .bean .bean_comment h2 {
   color: #0854cb;
   font-size: 32px;
   letter-spacing: -2px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 main .bean .bean_comment h4 {
@@ -257,11 +274,10 @@ main .new_arriver {
 
 main .new_arriver .container {
   display: flex;
-  width: 1300px;
   flex-direction: row;
 }
 main .new_arriver .container .reward_logo {
-  margin: 30px 0 0 -100px;
+  margin: 30px 0 0 0px;
 }
 main .new_arriver .container .reward_logo img {
   width: 300px;
@@ -270,16 +286,18 @@ main .new_arriver .container .reward_logo img {
 main .new_arriver .container .texts {
   display: flex;
   flex-direction: column;
+  width: 200px;
   margin: 80px 0 0 -30px;
 }
 main .new_arriver .container .texts span:first-child {
   color: #231916;
+  width: 200px;
   letter-spacing: 3px;
   font-size: 20px;
   margin: 0 0 50px 0;
 }
 main .new_arriver .container .texts .sub_rewards {
-  font-size: 28px;
+  font-size: 23px;
   color: #473e3b;
   letter-spacing: -3px;
   margin: 0 0 18px -10px;
@@ -288,16 +306,18 @@ main .new_arriver .container .texts .sub_rewards {
 }
 main .new_arriver .container .texts a {
   font-size: 13.5px;
+
   padding: 8px 25px 8px 25px;
   margin: 30px 500px 0 -15px;
   color: black;
+  width: 80px;
   border: 2px solid black;
   border-radius: 4px;
   background-color: transparent;
 }
 
 main .new_arriver .container .reward_coffee {
-  margin: 40px 0 0 60px;
+  margin: 40px 0 0 250px;
   position: relative;
 }
 main .new_arriver .container .reward_coffee img {
@@ -306,6 +326,7 @@ main .new_arriver .container .reward_coffee img {
 }
 main .location {
   background-color: #eaeaea;
+  height: 460px;
 }
 
 main > .location > .container {
@@ -318,7 +339,7 @@ main > .location > .container > .circle > img:first-child {
   left: 320px;
 }
 main > .location > .container > .circle > img:last-child {
-  margin: 0 0 0 80px;
+  margin: 0 0 0 40px;
 }
 
 main > .location > .container > .background_icon_line > img:nth-child(2),
@@ -328,16 +349,20 @@ main > .location > .container > .background_icon_line > img:nth-child(3) {
 
 main > .location > .container > .background_icon_line > a {
   display: block;
-  margin: 10px 0 0 260px;
+  margin: 10px 0 0 230px;
   color: black;
   border: 2px solid black;
-  width: 100px;
-  padding: 5px 20px 5px 25px;
+  width: 70px;
+  padding: 5px 20px 5px 20px;
   border-radius: 3px;
 }
-
+main > .location > .container > .background_icon_line {
+  position: relative;
+}
 main > .location > .container > .background_icon_line > img:last-child {
-  margin: 20px 0 0 520px;
+  position: absolute;
+  top: 350px;
+  right: 20px;
 }
 
 footer {
@@ -345,10 +370,6 @@ footer {
   color: white;
   width: 100%;
 }
-footer > .container {
-  width: 1200px;
-}
-
 footer a:hover {
   text-decoration: underline;
 }
@@ -358,13 +379,28 @@ footer > .container > .low ul,
 footer > .container > .company_info > ul {
   display: flex;
 }
+footer .container {
+  width: 1200px;
+}
+footer .container:first-child {
+  position: relative;
+}
 
+footer .container .decoration {
+  position: absolute;
+  right: 0px;
+}
+
+footer .container .footer_menu {
+  width: 90%;
+}
 footer .container .footer_menu ul {
-  border: 1px solid black;
+  width: 100%;
 }
 footer .container .footer_menu ul li {
   font-size: 13px;
   letter-spacing: -0.5px;
+  margin-left: -30px;
 }
 footer .container .footer_menu ul li:first-child {
   font-size: 15px;
@@ -378,6 +414,7 @@ footer > .container > .footer_menu > ul > li {
 footer .footer_prize {
   background-color: #282828;
   text-align: center;
+  padding-left: 8%;
 }
 
 footer > .footer_prize img {
@@ -385,7 +422,7 @@ footer > .footer_prize img {
 }
 
 footer > .container > .low > ul {
-  padding: 0 4% 0 4%;
+  padding: 0 12% 0 12%;
 }
 
 footer > .container > .low > ul > li {
@@ -396,6 +433,13 @@ footer > .container > .low > ul > li {
 footer > .container > .low > ul > li:last-child {
   border-right: none;
 }
+footer > .container > .low > ul > li > a {
+  letter-spacing: -2px;
+  font-size: 12px;
+}
+footer > .container > .low > ul > li:first-child a {
+  color: #00ac41;
+}
 
 footer > .container > .total_btn {
   text-align: center;
@@ -403,35 +447,33 @@ footer > .container > .total_btn {
 
 footer > .container > .total_btn > ul > li {
   display: inline-block;
-  color: white;
-  border: 3px solid white;
-  margin-right: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
-footer > .container > .total_btn > ul > li > a {
-  padding: 10px 35px 10px 35px;
-  font: bold;
+footer > .container > .total_btn > ul > li > a h5 {
+  font-size: 13px;
+  letter-spacing: -2px;
+
+  padding: 5px 20px 5px 20px;
+
+  margin: 0 10px 0 0;
+  border: 2px solid white;
+  border-radius: 3px;
 }
-footer > .container > .total_btn > ul > li > a:last-child {
-  padding: 10px 55px 10px 55px;
+footer > .container > .total_btn > ul > li:last-child > a > h5 {
+  padding: 5px 30px 5px 30px;
 }
 footer > .container > .company_info > ul {
-  padding-left: 14%;
-  padding-right: 14%;
+  padding-left: 10%;
 }
+
 footer > .container > .company_info > ul > li {
-  margin: 10px 10px 10px 10px;
+  margin: 10px 0px 10px 10px;
+  color: #8b9999;
+  font-size: 13px;
 }
 
 footer > .container > .mark {
   text-align: center;
+  color: #8b9999;
   padding-bottom: 100px;
-}
-
-footer .container:first-child {
-  position: relative;
-}
-footer .container .decoration {
-  float: right;
+  font-size: 13px;
 }
